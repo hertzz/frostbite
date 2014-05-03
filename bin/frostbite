@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby -Ilib
+#!/usr/bin/env ruby
 #
 # Frostbite
 # Reporting
@@ -6,5 +6,6 @@
 # http://github.com/tommyjohnson/frostbite
 #
 
-require 'frostbite'
+require File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'frostbite'))
+
 Frostbite::Cli.run(ARGV)
