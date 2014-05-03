@@ -1,0 +1,13 @@
+customer:
+  zendesk:
+    url: 'https://company.zendesk.com/api/v2'
+    auth_email: 'email@example.com'
+    auth_token: 'XXX'
+    organization: 'CUSTOMER'
+    collection:
+      open_tickets:
+        #- date_start: 
+        #- date_end:
+      solved_tickets:
+        #- date_start:
+        #- date_end: 

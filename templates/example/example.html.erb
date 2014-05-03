@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Example Report</title>
+</head>
+<body>
+  <h1>Example Report</h1>
+
+  <h3>Open Tickets:</h3>
+  <ul>
+  <% @fields['open_tickets'].each do |t| %>
+    <% t.each do |st| %>
+      <% st.each do |ticket| %>
+        <li><a href="http://example.zendesk.com/tickets/<%= ticket['id'] %>"><%= ticket['subject'] %></a></li>
+      <% end %>
+    <% end %>
+  <% end %>
+  </ul>
+  
+  <h3>Closed Tickets:</h3>
+  <ul>
+  <% @fields['solved_tickets'].each do |t| %>
+    <% t.each do |st| %>
+      <% st.each do |ticket| %>
+        <li><a href="http://example.zendesk.com/tickets/<%= ticket['id'] %>"><%= ticket['subject'] %></a></li>
+      <% end %>
+    <% end %>
+  <% end %>
+  </ul>
+
+</body>
+</html>
