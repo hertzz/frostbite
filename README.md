@@ -1,4 +1,7 @@
 # Frostbite
+
+[![Build Status](https://travis-ci.org/tommyjohnson/frostbite.svg?branch=master)](https://travis-ci.org/tommyjohnson/frostbite)
+
 ### Reporting
 
 The Frostbite reporting app allows you to generate HTML reports based off defined provider endpoints. Reports can be configured for what data they will gather and how they are to be structured for output. 
