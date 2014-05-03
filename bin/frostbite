@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby -Ilib
+#
+# Frostbite
+# Reporting
+#
+# http://github.com/tommyjohnson/frostbite
+#
+
+require 'frostbite'
+Frostbite::Cli.run(ARGV)
